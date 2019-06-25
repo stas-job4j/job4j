@@ -11,8 +11,16 @@ public class Calculate {
 * Main . Точка входа в программу .
 * @param args - args (метод имеет параметр args)
 */
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
       System.out.println("Hello, Job4j.");
+   }
+/**
+     * Method echo.
+     * @param name Your name.
+     * @return Echo plus your name.
+     */
+  public String echo(String name) {
+        return "Echo, echo, echo : " + name;
+   
    }
 }
