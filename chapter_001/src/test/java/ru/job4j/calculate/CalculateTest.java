@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 
  *@author Stanislau S. (saydobenothing@gmail.com)
  *@version 1.0
- *@since 24.06.2018
+ *@since 24.06.2019
 
  */
 public class CalculateTest {
