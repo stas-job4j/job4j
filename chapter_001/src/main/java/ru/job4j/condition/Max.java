@@ -8,10 +8,15 @@ package ru.job4j.condition;
 public class Max {
     /**
      * Метод ,который возвращает большее из 2 чисел.
-     * @param  left,right - первое и второе число.
+     *
+     * @param left,right - первое и второе число.
      * @return result = Max (большее из двух чисел).
      */
     public int max(int left, int right) {
-        return left < right ? right : left;
+        int result = 0;
+        if (left != right) {
+            result = left < right ? right : left;
+        }
+        return result;
     }
 }

@@ -34,9 +34,9 @@ public class MaxTest {
      * Test left = right
      */
     @Test
-    public void whenMax0To0Then0() {
+    public void whenMax1To1Then0() {
         Max max = new Max();
-        int result = max.max(0, 0);
+        int result = max.max(1, 1);
         assertThat(result, is(0));
     }
 }
