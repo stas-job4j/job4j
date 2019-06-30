@@ -10,9 +10,11 @@ import static org.junit.Assert.assertThat;
  *@author Stanislau S. (saydobenothing@gmail.com)
  *@version 1.0
  *@since 29.06.2019
-
  */
 public class PointTest {
+    /**
+     * Test y = 10
+     */
     @Test
     public void whenZeroAndTenThenTen() {
         Point point = new Point();
