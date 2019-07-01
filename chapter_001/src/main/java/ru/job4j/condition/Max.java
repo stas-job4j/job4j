@@ -13,10 +13,6 @@ public class Max {
      * @return result = Max (большее из двух чисел).
      */
     public int max(int left, int right) {
-        int result = 0;
-        if (left != right) {
-            result = left < right ? right : left;
+            return left <= right ? right : left;
         }
-        return result;
     }
-}
