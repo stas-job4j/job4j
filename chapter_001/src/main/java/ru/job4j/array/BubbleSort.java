@@ -14,8 +14,6 @@ public class BubbleSort {
                 if (tempR < tempL) {
                     array[left + 1] = tempL;
                     array[left] = tempR;
-                } else {
-                    break;
                 }
             }
         }
