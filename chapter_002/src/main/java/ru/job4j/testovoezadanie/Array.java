@@ -11,7 +11,7 @@ public class Array {
      * т.е. явной сортировки нет,массив заполняется элементами из двух массивов от меньшего к большему
      * @param left (один отсортированный массив)
      * @param right (второй отсортированный массив)
-     * @return array (суммарный отсортированный массив
+     * @return array (суммарный отсортированный массив)
      */
     public int[] merge(int[] left, int[] right) {
         int[] array = new int[left.length + right.length];
