@@ -38,4 +38,14 @@ public class ArrayTest {
         int[] expectArray = new int[]{0, 2, 3, 4, 5, 6, 8, 12, 13, 18, 27, 100};
         assertThat(resultArray, is(expectArray));
     }
+
+    @Test
+    public void whenHasTwoArraysThenOne() {
+        Array arr = new Array();
+        int[] input1 = new int[]{0, 2, 5, 8};
+        int[] input2 = new int[]{1, 4, 6};
+        int[] resultArray = arr.mergeSecond(input1, input2);
+        int[] expectArray = new int[]{0, 1, 2, 4, 5, 6, 8};
+        assertThat(resultArray, is(expectArray));
+    }
 }

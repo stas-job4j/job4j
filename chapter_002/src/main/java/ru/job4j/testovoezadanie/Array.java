@@ -28,4 +28,19 @@ public class Array {
         }
         return array;
     }
+
+    public int[] mergeSecond(int[] left, int[] right) {
+        int[] array = new int[left.length + right.length];
+        int indexL = 0, indexR = 0;
+        for (int index = 0; index < array.length; index++) {
+            if (indexL == left.length) {
+                array[index] = right[indexR++];
+            } else if (indexR == right.length) {
+                array[index] = left[indexL++];
+            } else {
+                array[index] = left[indexL] < right[indexR] ? left[indexL++] : right[indexR++];
+            }
+        }
+        return array;
+    }
 }
