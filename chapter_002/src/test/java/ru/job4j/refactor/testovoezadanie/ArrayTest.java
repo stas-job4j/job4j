@@ -39,6 +39,9 @@ public class ArrayTest {
         assertThat(resultArray, is(expectArray));
     }
 
+    /**
+     * Test метода при 2 массивах на 4 и 3 элемента
+     */
     @Test
     public void whenHasTwoArraysThenOne() {
         Array arr = new Array();
@@ -46,6 +49,31 @@ public class ArrayTest {
         int[] input2 = new int[]{1, 4, 6};
         int[] resultArray = arr.mergeSecond(input1, input2);
         int[] expectArray = new int[]{0, 1, 2, 4, 5, 6, 8};
+        assertThat(resultArray, is(expectArray));
+    }
+
+    /**
+     * Test метода при 2 массивах на 6 и 12 элементов
+     */
+    @Test
+    public void whenHasTwoArraysThenOneSum() {
+        Array arr = new Array();
+        int[] input1 = new int[]{0, 3, 5, 9, 12, 38};
+        int[] input2 = new int[]{1, 4, 6, 10, 11, 76, 79, 100, 143, 500, 550, 1000};
+        int[] resultArray = arr.mergeSecond(input1, input2);
+        int[] expectArray = new int[]{0, 1, 3, 4, 5, 6, 9, 10, 11, 12, 38, 76, 79, 100, 143, 500, 550, 1000};
+        assertThat(resultArray, is(expectArray));
+    }
+    /**
+     * Test метода при 2 массивах на 4 и 2 элемента
+     */
+    @Test
+    public void whenHasTwoArraysThenOneSumSum() {
+        Array arr = new Array();
+        int[] input1 = new int[]{1, 13, 75, 999};
+        int[] input2 = new int[]{2, 5};
+        int[] resultArray = arr.mergeSecond(input1, input2);
+        int[] expectArray = new int[]{1, 2, 5, 13, 75, 999};
         assertThat(resultArray, is(expectArray));
     }
 }

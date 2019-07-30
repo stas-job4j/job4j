@@ -2,12 +2,13 @@ package ru.job4j.refactor;
 
 import static java.lang.Math.sqrt;
 import static java.lang.Math.pow;
+
 /**
  * Программа расчета расстояния между точками в системе координат.
-
- *@author Stanislau S. (saydobenothing@gmail.com)
- *@version $1.0$
- *@since 18.07.2019
+ *
+ * @author Stanislau S. (saydobenothing@gmail.com)
+ * @version $1.0$
+ * @since 18.07.2019
  */
 
 public class Point {
@@ -16,17 +17,19 @@ public class Point {
 
     /**
      * Конструктор, который принимает начальное состояние объекта "точка"
-     * @param first координата x
+     *
+     * @param firs  координата x
      * @param second координата y
      */
-    public Point(int first, int second) {
-        this.x = first;
+    public Point(int firs, int second) {
+        this.x = firs;
         this.y = second;
     }
 
     /**
      * Метод для рассчета расстояния между точками в системе координат.
-     * @param  that ( переменная типа Point )
+     *
+     * @param that ( переменная типа Point )
      * @return расстояние между точками.
      */
 
@@ -40,4 +43,5 @@ public class Point {
     public void info() {
         System.out.println(String.format("Point[%s, %s]", this.x, this.y));
     }
+
 }

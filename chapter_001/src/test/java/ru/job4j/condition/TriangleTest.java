@@ -8,7 +8,7 @@ import static org.hamcrest.number.IsCloseTo.closeTo;
 import static org.junit.Assert.*;
 
 /**
- * @author Stanislau S. (saydobenothing@gmail.com)
+ * @author Stanislau Sinkevich. (saydobenothing@gmail.com)
  * @version $1.0$
  * @since 02.07.2019
  */
