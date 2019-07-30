@@ -35,7 +35,7 @@ public class Max {
      */
     public int max(int first, int second, int third, int fourth) {
         return max(fourth,
-                max(first, second,third)
+                max(first, second, third)
         );
 
     }
