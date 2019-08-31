@@ -29,4 +29,10 @@ public class SqMaxTest {
         int result = SqMax.max(2, 3, 4, 1);
         assertThat(result, is(expected));
     }
+    @Test
+    public void whenMax5To3To4To1() {
+        int expected = 5;
+        int result = SqMax.max(4, 3, 5, 1);
+        assertThat(result, is(expected));
+    }
 }
